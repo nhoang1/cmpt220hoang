@@ -8,6 +8,7 @@ public class twopointfive {
 		int subtotal = input.nextInt();
 		System.out.print("Enter the tip percentage as an integer");
 		int tip = input.nextInt();
+		
 		double tipAmount = subtotal * tip / 100.00; 
 		double total = subtotal + tipAmount;
 		System.out.print ("The tip is " + tipAmount + "$ and the total is " + total +"$");
