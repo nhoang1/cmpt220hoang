@@ -13,6 +13,6 @@ public class twopointseven {
 		    int day = remMinutes / 1440;
 
 
-		    System.out.println(minutes + " amounts to " + year + " years and "  +  remMinutes + " day ");
+		    System.out.println(minutes + " amounts to " + year + " years and "  +  day + " day "); // JA
 	 }
 }
