@@ -1,4 +1,4 @@
-public class fivepointthridteen {
+public class fivepointthirdteen {
 
 	public static void main(String[] args) {
 		int n = 0;
