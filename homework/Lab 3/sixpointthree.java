@@ -7,7 +7,12 @@ public class sixpointthree {
 		System.out.println("Enter a number:");
 		int a = input.nextInt();
 		if (a < 0) {
-			System.out.print(a + " is not a palindrome");
+			int n = a*(-1);
+			if (isPalindrome (n)) {
+				System.out.print(a + " is a palindrome");
+			} else {
+				System.out.print(a + " is not a palindrome");
+			}
 		} else if (isPalindrome (a)) {
 			System.out.print(a + " is a palindrome");
 		} else {
