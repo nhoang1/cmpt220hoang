@@ -1,5 +1,6 @@
 import java.util.Scanner;
-
+// JA: This is not finding the prime factors. 
+// A simple logic is to try all the numbers starting from 2
 public class fivepointsixteen {
 
 	public static void main(String[] args) {
