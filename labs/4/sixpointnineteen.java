@@ -1,4 +1,4 @@
-package Lab4;
+//package Lab4;
 import java.util.Scanner;
 public class sixpointnineteen {
 
@@ -32,7 +32,7 @@ public class sixpointnineteen {
 	
 	public static double area (double a, double b, double c) {
 		double pHalf = (a+b+c)/2;
-		double area = Math.pow(   ((pHalf)*(pHalf-a)*(pHalf-b)*(pHalf-c)), (1/2) ); //Heron's formula
+		double area = Math.pow(   ((pHalf)*(pHalf-a)*(pHalf-b)*(pHalf-c)), (1./2) ); //Heron's formula
 		return area;
 	}
 }
