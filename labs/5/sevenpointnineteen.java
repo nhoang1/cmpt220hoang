@@ -1,4 +1,4 @@
-package Lab5;
+//package Lab5;
 import java.util.Scanner;
 
 public class sevenpointnineteen {
@@ -21,12 +21,13 @@ public class sevenpointnineteen {
 	
 	public static boolean isSorted (int[] a) {
 		//compare each element of the array with the element next to it
-		boolean sorted = false;
+		boolean sorted = true;
 		for (int i = 0; i < (a.length-1) ; i++) { 		//(a.length-1) is so that the last element doesn't go over the array limit
 			if (a[i] < a[i+1]) {
 				sorted = true;
 			} else {
 				sorted = false;
+				break; // JA: you only need one to say it's not sorted
 			}
 		}
 		return sorted;
