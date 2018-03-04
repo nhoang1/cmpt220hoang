@@ -1,4 +1,4 @@
-package Lab6;
+//package Lab6;
 import java.util.Scanner;
 public class LinearEquation {
 	private double a;

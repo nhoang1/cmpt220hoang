@@ -1,4 +1,4 @@
-package Lab6;
+//package Lab6;
 
 public class Rectangle {	
 	double width = 1;
