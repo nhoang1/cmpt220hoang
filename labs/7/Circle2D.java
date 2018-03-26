@@ -1,4 +1,6 @@
-package Lab7;
+//package Lab7;
+
+// JA: No test class?
 
 public class Circle2D {	
 	private double x;
