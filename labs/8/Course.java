@@ -1,4 +1,5 @@
-package Lab8;
+//package Lab8;
+// JA: No test class?
 import java.util.ArrayList;
 public class Course {
 		
