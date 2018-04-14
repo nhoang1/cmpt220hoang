@@ -1,4 +1,4 @@
-package Lab9;
+//package Lab9;
 
 public class IllegalTriangleException extends Exception {
 	private double side1;

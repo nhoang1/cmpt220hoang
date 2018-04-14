@@ -1,4 +1,4 @@
-package Lab8;
+//package Lab8;
 
 public abstract class GeometricObject {
 	  private String color = "white";
