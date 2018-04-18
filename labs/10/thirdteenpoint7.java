@@ -1,4 +1,4 @@
-package Lab10;
+//package Lab10;
 
 public class thirdteenpoint7 {
 

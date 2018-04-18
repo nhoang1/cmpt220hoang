@@ -1,4 +1,4 @@
-package Lab10;
+//package Lab10;
 
 public class Octagon implements Cloneable, Comparable<Octagon> {
 	private double side;
