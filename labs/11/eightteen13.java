@@ -1,4 +1,4 @@
-package Lab11;
+//package Lab11;
 import java.util.Scanner;
 public class eightteen13 {
 
