@@ -46,21 +46,22 @@ public class Inventory{
 			} catch (Exception e) {
 				System.out.println("The input is not in the correct format. Please try again.");
 			} 
-					//not displaying message when enter int larger than 4
 		}
 	}
 
 
-	private static void programStart(ArrayList<Item> inventory) {
+	private static void programStart(ArrayList<Item> inventory) {		//Method that initiate the program
 		try{
-			String pathToFile = new File("inventory.txt").getAbsolutePath();
-			Scanner input = new Scanner(new File(pathToFile)); //properties in java
-			//external file
-			
+			String pathToFile = new File("inventory.txt").getAbsolutePath(); //Locate the path to the data text file inventory.txt
+			Scanner input = new Scanner(new File(pathToFile));
+
+			/* Scan the data text file and use the scanned data to create an ArrayList that is a
+			  replication of the inventory */
 			int index = 0;
 			while (input.hasNextLine()){
 				
-				String currentLine = input.nextLine();
+				// Scan the text data and create items in the ArrayList based on the item type and information
+				String currentLine = input.nextLine();						
 				Scanner read = new Scanner(currentLine).useDelimiter("!");
 				String type = read.next();
 				if ("T".equals(type)) {
@@ -96,9 +97,11 @@ public class Inventory{
 	}
 
 
-	public static void programExit(ArrayList<Item> inventory) {
+	public static void programExit(ArrayList<Item> inventory) { //Method to exit the program
 		running = false;
-		insertionSort(inventory);
+		insertionSort(inventory); 	//Sort the inventory 
+		
+		//Print the inventory back into inventory.txt
 		try {
 			File newInventory = new File("inventory.txt");
 			PrintWriter output = new PrintWriter(newInventory);
@@ -123,7 +126,7 @@ public class Inventory{
 	}
 
 
-	public static void modItem() throws Exception {
+	public static void modItem() throws Exception {			//Method to modify items in the inventory
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter the item's ID number: ");		//Prompt user to enter ID number.
 		
@@ -199,13 +202,14 @@ public class Inventory{
 			
 	}
 
-	public static void addItem() throws Exception {
+	public static void addItem() throws Exception {		//Method to add items
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter the item type:");
 		System.out.println("1. Top");
 		System.out.println("2. Bottom");
 		System.out.println("3. Shoes");
 		
+		//Get the item information from the user, construct the item, and add it to the ArrayList
 		try {
 			int n = input.nextInt(); 
 			input.nextLine();
@@ -268,6 +272,9 @@ public class Inventory{
 	  }  
 	  return true;  
 	}
+	
+	
+	// Insertion sort method to sort the items in the array based on their Id numbers
 	
 	public static void insertionSort(ArrayList<Item> inventory) {
 		 int i, j;
